@@ -12,12 +12,14 @@ import ARKit
 class ARKitManager: NSObject {
     
     // MARK: - Properties
+    public weak var delegate: AlertPresentationDelegate?
     private var imageConfiguration: ARImageTrackingConfiguration?
     private var currentSceneView: ARSCNView?
     
     // MARK: - Public methods
     public func configureSession(_ sceneView: ARSCNView) {
         currentSceneView = sceneView
+        
         // Create a session configuration
         imageConfiguration = ARImageTrackingConfiguration()
         
@@ -35,6 +37,7 @@ class ARKitManager: NSObject {
     }
     
     public func pauseSession() {
+        // Pause an AR session
         currentSceneView?.session.pause()
     }
     
@@ -68,7 +71,7 @@ extension ARKitManager: ARSCNViewDelegate {
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
-        
+        delegate?.presentAlert(title: "ARSession error", text: error.localizedDescription)
     }
     
     func sessionWasInterrupted(_ session: ARSession) {

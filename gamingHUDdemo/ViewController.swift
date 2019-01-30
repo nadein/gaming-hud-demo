@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     // MARK: - UIViewController methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        arKitManager.delegate = self
         sceneView.delegate = arKitManager
     }
     
@@ -33,5 +34,12 @@ class ViewController: UIViewController {
         super.viewWillDisappear(animated)
         arKitManager.pauseSession()
     }
+}
 
+// MARK: - AlertPresentationDelegate
+extension ViewController: AlertPresentationDelegate {
+    func presentAlert(title: String, text: String) {
+        let alertController = UIAlertController(title: title, message: text, preferredStyle: .alert)
+        self.present(alertController, animated: true, completion: nil)
+    }
 }

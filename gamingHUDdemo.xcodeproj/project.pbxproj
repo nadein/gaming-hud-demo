@@ -15,6 +15,7 @@
 		FA233B83220056F00032F9A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA233B81220056F00032F9A5 /* LaunchScreen.storyboard */; };
 		FA233B8B2200768F0032F9A5 /* ARKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA233B8A2200768F0032F9A5 /* ARKitManager.swift */; };
 		FA233B8D2200865D0032F9A5 /* ARNodesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA233B8C2200865D0032F9A5 /* ARNodesProvider.swift */; };
+		FA233B8F220203230032F9A5 /* AlertPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA233B8E220203230032F9A5 /* AlertPresentationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FA233B84220056F00032F9A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA233B8A2200768F0032F9A5 /* ARKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitManager.swift; sourceTree = "<group>"; };
 		FA233B8C2200865D0032F9A5 /* ARNodesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNodesProvider.swift; sourceTree = "<group>"; };
+		FA233B8E220203230032F9A5 /* AlertPresentationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				FA233B76220056EE0032F9A5 /* AppDelegate.swift */,
 				FA233B78220056EE0032F9A5 /* art.scnassets */,
+				FA233B8E220203230032F9A5 /* AlertPresentationDelegate.swift */,
 				FA233B7A220056EE0032F9A5 /* ViewController.swift */,
 				FA233B8A2200768F0032F9A5 /* ARKitManager.swift */,
 				FA233B8C2200865D0032F9A5 /* ARNodesProvider.swift */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA233B7B220056EE0032F9A5 /* ViewController.swift in Sources */,
+				FA233B8F220203230032F9A5 /* AlertPresentationDelegate.swift in Sources */,
 				FA233B77220056EE0032F9A5 /* AppDelegate.swift in Sources */,
 				FA233B8B2200768F0032F9A5 /* ARKitManager.swift in Sources */,
 				FA233B8D2200865D0032F9A5 /* ARNodesProvider.swift in Sources */,
